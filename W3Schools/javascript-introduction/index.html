@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- Use of the script in the head, in terms of speed it's slower than placing in the bottom of the body -->
+        <!-- Use of a external file to the scripts -->
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h2>What Can JavaScript Do?</h2>
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello, World!"'>Click Me!</button>
+        <hr>
+
+        <p>JavaScript can change HTML attribute values.</p>
+        <button onclick="document.getElementById('bulb').src='assets/pic_bulbon.gif'">Turn on</button>
+        <img src="assets/pic_bulboff.gif" id="bulb">
+        <button onclick="document.getElementById('bulb').src='assets/pic_bulboff.gif'">Turn off</button>
+        <hr>
+
+        <p id="demo2">JavaScript can change the style of a HTML element.</p>
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize = '35px'">Click me!</button>
+        <hr>
+
+        <p id="demo3">JavaScript can <span style="color:palegreen">hide</span> HTML elements.</p>
+        <p id="demo4" style="display:none">JavaScript can show <span style="color:tomato">hidden</span> elements.</p>
+        <button type="button" onclick="document.getElementById('demo3').style.display = 'none'">Click me!</button>
+        <button type="button" onclick="document.getElementById('demo4').style.display = 'block'">Click me after!</button>
+        <hr>
+
+        <button type="butotn" onclick="sayHello()">Say hello!</button>
+    </body>
+</html>
